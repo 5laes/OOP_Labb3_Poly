@@ -6,13 +6,16 @@ namespace OOP_Labb3_Poly
     {
         static void Main(string[] args)
         {
-            Cirkel cirkel = new Cirkel();
-            Fyrkant fyrkant = new Fyrkant();
-            Rektangel rektangel = new Rektangel();
+            Geometri geometri;
 
-            Console.Write($"\n\tArea cirkel:\t{cirkel.Area()}");
-            Console.Write($"\n\tArea fyrkant:\t{fyrkant.Area()}");
-            Console.Write($"\n\tArea rektangel:\t{rektangel.Area()}");
+            geometri = new Cirkel();
+            Console.Write($"\n\tArea cirkel:\t{geometri.Area()}");
+
+            geometri = new Fyrkant();
+            Console.Write($"\n\tArea fyrkant:\t{geometri.Area()}");
+
+            geometri = new Rektangel();
+            Console.Write($"\n\tArea rektangel:\t{geometri.Area()}");
             Console.ReadLine();
         }
     }

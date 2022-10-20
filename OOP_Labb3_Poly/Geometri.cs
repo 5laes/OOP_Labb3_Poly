@@ -4,11 +4,12 @@ using System.Text;
 
 namespace OOP_Labb3_Poly
 {
-    class Teckning
+    class Geometri
     {
         virtual public double Area()
         {
-            return 1;
+            double area = 0;
+            return area;
         }
     }
 }

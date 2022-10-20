@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP_Labb3_Poly
 {
-    class Cirkel : Teckning
+    class Cirkel : Geometri
     {
         public double radius { get; set; }
 

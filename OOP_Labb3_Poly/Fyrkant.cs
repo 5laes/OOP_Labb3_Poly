@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP_Labb3_Poly
 {
-    class Fyrkant : Teckning
+    class Fyrkant : Geometri
     {
         public double sideLength { get; set; }
 
