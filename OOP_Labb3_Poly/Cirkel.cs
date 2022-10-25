@@ -4,18 +4,20 @@ using System.Text;
 
 namespace OOP_Labb3_Poly
 {
+    //klass som ärver av Geometri
     class Cirkel : Geometri
     {
-        public double radius { get; set; }
+        public double Radius { get; set; }
 
         public Cirkel()
         {
-            radius = 9;
+            Radius = 9;
         }
-        
+
+        //metod som overridear basklassens metod för att räkna ut arean på en cirkel
         override public double Area()
         {
-            double area = radius * radius * 3.14;
+            double area = Radius * Radius * 3.14;
             return area;
         }
     }

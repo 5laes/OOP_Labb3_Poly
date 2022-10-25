@@ -4,19 +4,21 @@ using System.Text;
 
 namespace OOP_Labb3_Poly
 {
+    //klass som ärver av Geometri
     class Rektangel : Geometri
     {
-        public double shortSide { get; set; }
-        public double longSide { get; set; }
+        public double ShortSide { get; set; }
+        public double LongSide { get; set; }
 
         public Rektangel()
         {
-            shortSide = 3;
-            longSide = 9;
+            ShortSide = 3;
+            LongSide = 9;
         }
+        //metod som overridear basklassens metod för att räkna ut arean på en rektangel
         override public double Area()
         {
-            double area = longSide * shortSide; ;
+            double area = LongSide * ShortSide; ;
             return area;
         }
     }

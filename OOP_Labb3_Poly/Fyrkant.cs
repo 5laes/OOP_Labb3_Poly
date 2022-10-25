@@ -4,17 +4,19 @@ using System.Text;
 
 namespace OOP_Labb3_Poly
 {
+    //klass som ärver av Geometri
     class Fyrkant : Geometri
     {
-        public double sideLength { get; set; }
+        public double SideLength { get; set; }
 
         public Fyrkant()
         {
-            sideLength = 6;
+            SideLength = 6;
         }
+        //metod som overridear basklassens metod för att räkna ut arean på en fyrkant
         override public double Area()
         {
-            double area = sideLength * sideLength;
+            double area = SideLength * SideLength;
             return area;
         }
     }
