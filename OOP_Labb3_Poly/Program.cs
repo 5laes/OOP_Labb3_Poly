@@ -6,20 +6,17 @@ namespace OOP_Labb3_Poly
     {
         static void Main(string[] args)
         {
-            //skapar en tomt objekt referens av klassen "Geometri"
-            Geometri geometri;
-
             //Här pekar referensen till att bli ett objekt av klassen "Cirkel"
-            geometri = new Cirkel();
-            Console.Write($"\n\tArea cirkel:\t{geometri.Area()}");
+            Geometri cirkel = new Cirkel();
+            Console.Write($"\n\tArea cirkel:\t{cirkel.Area()}");
 
             //Här pekar referensen till att bli ett objekt av klassen "Fyrkant"
-            geometri = new Fyrkant();
-            Console.Write($"\n\tArea fyrkant:\t{geometri.Area()}");
+            Geometri fyrkant = new Fyrkant();
+            Console.Write($"\n\tArea fyrkant:\t{fyrkant.Area()}");
 
             //Här pekar referensen till att bli ett objekt av klassen "Rektangel"
-            geometri = new Rektangel();
-            Console.Write($"\n\tArea rektangel:\t{geometri.Area()}");
+            Geometri rektangel = new Rektangel();
+            Console.Write($"\n\tArea rektangel:\t{rektangel.Area()}");
             Console.ReadLine();
         }
     }
